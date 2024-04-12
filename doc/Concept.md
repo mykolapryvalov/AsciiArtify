@@ -24,13 +24,12 @@ AsciiArtify, a startup focused on developing a new software product for transfor
 
 # Advantages and disadvantages
 
-| Pros and Cons  |	Minikube 	   |     Kind        |     k3d        |    Podman      |
-|:-------------- |:-------------:| ---------------:|---------------:|---------------:|
-| Pros           |+ Easy to use  |                 |                |                |
-
-
-| Лінус          | Торвальдс     | Linux           |                |                |
-
+| Pros and Cons  |	Minikube   	   |     Kind           |     k3d        |    Podman      |
+|:--------------:|:---------------:|:------------------:|:--------------:|:--------------:|
+| Pros           |+ Easy to use    |+ Suitable for local|                |                |
+|:--------------:|:---------------:|:------------------:|:--------------:|:--------------:|
+|                | + Suitable for  |            |                |                |
+   
 
 
 
