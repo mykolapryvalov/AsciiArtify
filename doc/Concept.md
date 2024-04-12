@@ -24,11 +24,7 @@ AsciiArtify, a startup focused on developing a new software product for transfor
 
 # Advantages and disadvantages
 
-<style>
-.my-table td {
-  height: 40px;
-}
-</style>
+
 
 | Pros and Cons  |	Minikube   	   |     Kind           |     k3d        |    Podman      |
 |:--------------:|:---------------:|:------------------:|:--------------:|:--------------:|
