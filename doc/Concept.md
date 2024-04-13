@@ -24,14 +24,14 @@ AsciiArtify, a startup focused on developing a new software product for transfor
 
 # Advantages and disadvantages
 
+| Criteria | Minikube | Kind | k3d | Podman |
+|----------|----------|------|-----|--------|
+| Pros     | + Easy to use<br>+ Suitable for local development and testing | + Suitable for local development and testing<br>+ Works within Docker containers<br>+ Fast cluster creation and testing | + Suitable for local development and testing<br>+ Works within Docker containers<br>+ Fast cluster creation and testing<br>+ Light alternative to Docker | + Easy to use<br>+ Suitable for local development and testing<br>+ Works within Docker containers |
+| Cons     | - Doubts about scalability<br>- Potential limitations | - Limited information on scalability<br>- Limited community documentation | - Limited documentation<br>- Potential scalability concerns | - Limited information on scalability<br>- Limited community documentation |
 
 
-| Pros and Cons  |	Minikube   	   |     Kind           |     k3d        |    Podman      |
-|:--------------:|:----------------:|:------------------:|:--------------:|:--------------:|
-| Pros           |+ Easy to use     |+ Suitable for local|                |                |
 
-|                | + Suitable for  |                     |                |                |
-   
+
 
 
 
