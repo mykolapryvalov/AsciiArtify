@@ -43,7 +43,7 @@ Get ArgoCD UI Admin Password:
 
 	kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
 
-Enter the received password and admin login in the ArgoCD Web interface:
+Enter the received password and login **admin** in the ArgoCD Web interface:
 
 ![argoCDWebUI](https://github.com/mykolapryvalov/AsciiArtify/blob/main/doc/img/argoCDWebUI.png)
  
