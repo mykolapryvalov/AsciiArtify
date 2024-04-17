@@ -20,6 +20,10 @@ Argo CD is implemented as a Kubernetes controller which continuously monitors ru
 
 Instal k3d from the source:
 
+  curl -s https://raw.githubusercontent.com/rancher/k3d/main/install.sh | bash
+
+
+  
 
 
 
