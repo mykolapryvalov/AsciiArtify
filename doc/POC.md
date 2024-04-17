@@ -16,4 +16,10 @@ Argo CD follows the GitOps pattern of using Git repositories as the source of tr
 
 Argo CD is implemented as a Kubernetes controller which continuously monitors running applications and compares the current, live state against the desired target state (as specified in the Git repo).
 
+## Installation
+
+Instal k3d from the source:
+
+
+
 
