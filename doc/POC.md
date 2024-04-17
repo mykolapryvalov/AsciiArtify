@@ -20,23 +20,34 @@ Argo CD is implemented as a Kubernetes controller which continuously monitors ru
 ## Installation
 
 Instal k3d from the source:
+	    
+	curl -s https://raw.githubusercontent.com/rancher/k3d/main/install.sh | bash
 
-vim Container
-    
-	FROM busybox
-	CMD while true; do { echo -e 'HTTP/1.1 200 OK\n\nVersion: v1.0.0'; }|nc -vlp 8080;done
-	EXPOSE 8080
- #   
-	img build -t denvasyliev/demo:v1.0.0 -f Container .
-	img unpack denvasyliev/demo:v1.0.0
-	runc spec
-	runc run demo
-	vim config.json:
-		terminal false
-		"sh", "-c", "while true; do { echo -e 'HTTP/1.1 200 OK\n\nVersion: v1.0.0'; }|nc -vlp 8080;done"
-		rootfs false
-		"path": "/var/run/netns/runc"
+Setup K3D cluster:
 
+	k3d cluster create argo-cluster
+
+Create namespace for ArgoCD:
+
+	kubectl create namespace argocd
+
+Install ArgoCD:
+
+	kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+
+Forward ArgoCD Server port to the localhost:
+
+	kubectl port-forward svc/argocd-server -n argocd 8080:443
+
+Get ArgoCD UI Admin Password:
+
+	kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+
+Enter the received password and admin login in the ArgoCD Web interface:
+
+![argoCDWebUI](https://github.com/mykolapryvalov/AsciiArtify/blob/main/doc/img/argoCDWebUI.png)
+ 
+	
 
   
 
