@@ -47,7 +47,7 @@ Get ArgoCD UI Admin Password:
 
 Enter the received password and login **admin** in the ArgoCD Web interface:
 
-![argoCDWebUI](https://github.com/mykolapryvalov/AsciiArtify/blob/main/doc/img/argoCDWebUI.png)
+![argoCDWeb](https://github.com/mykolapryvalov/AsciiArtify/blob/main/doc/img/argoCDWeb.png)
  
 	
 
