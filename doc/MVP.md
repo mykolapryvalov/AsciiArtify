@@ -18,7 +18,7 @@ Check that server answer:
  
 Let's check the app's performance:
 
-
+![img_demo](https://github.com/mykolapryvalov/AsciiArtify/blob/main/doc/img/img_demo.gif)
 
 
 
