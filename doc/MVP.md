@@ -8,13 +8,13 @@
 
 forward ports: 
 
-  $ k port-forward -n demo svc/ambassador 8081:80&
+    $ k port-forward -n demo svc/ambassador 8081:80&
     Forwarding from 127.0.0.1:8081 -> 80
     Forwarding from [::1]:8081 -> 80
 
 Check that server answer:
 
-  $ curl localhost:8081
+    $ curl localhost:8081
  
 Let's check the app's performance:
 
